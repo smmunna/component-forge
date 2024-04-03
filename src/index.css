@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dashboard Layout */
+.ullist li {
+    color: black !important;
+  }
+  
+  .ullist li:hover {
+    color: #008CFF !important;
+  }
+  
+  .dropdwndetails:hover {
+    color: #008CFF !important;
+  }

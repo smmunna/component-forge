@@ -3,6 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import ErrorPage from "../components/ui/ErrorPage";
 import App from "../App";
 import About from "../pages/About/About";
+import Documentation from "../layout/Documentation";
+import Forms from "../pages/Documentation/Forms/Forms";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +15,20 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <App />  //Insert your Home  Page component here
+            },
+            {
+                path: "/documentation",
+                element: <Documentation />,
+                children: [
+                    {
+                        path: "",
+                        element: <App />  //Insert your Home  Page component here
+                    },
+                    {
+                        path: "forms",
+                        element: <Forms />
+                    }
+                ]
             },
             {
                 path: "/about",

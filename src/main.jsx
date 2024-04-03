@@ -12,6 +12,7 @@ import {
 import { HelmetProvider } from 'react-helmet-async'
 import { Provider } from 'react-redux';
 import Store from './redux/store/Store.jsx';
+import 'react-tabs/style/react-tabs.css';
 
 // Create a client
 const queryClient = new QueryClient()
