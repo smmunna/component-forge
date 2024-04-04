@@ -5,6 +5,9 @@ import App from "../App";
 import About from "../pages/About/About";
 import Documentation from "../layout/Documentation";
 import Forms from "../pages/Documentation/Forms/Forms";
+import Table from "../pages/Documentation/Table/Table";
+import NavabrCollection from "../pages/Documentation/Navbar/NavabrCollection";
+import Home from "../pages/Home/Home";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +17,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <App />  //Insert your Home  Page component here
+                element: <Home />  //Insert your Home  Page component here
             },
             {
                 path: "/documentation",
@@ -27,6 +30,14 @@ const router = createBrowserRouter([
                     {
                         path: "forms",
                         element: <Forms />
+                    },
+                    {
+                        path: "table",
+                        element: <Table />
+                    },
+                    {
+                        path: "navbar",
+                        element: <NavabrCollection />
                     }
                 ]
             },

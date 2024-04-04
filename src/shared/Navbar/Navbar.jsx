@@ -21,7 +21,7 @@ function Navbar() {
     );
 
     return (
-        <nav className="bg-gray-800 p-4" style={{ zIndex: '1000' }}> {/* Set a higher z-index here */}
+        <nav className="bg-gray-800 p-4 fixed top-0 w-full z-50"> {/* Set a higher z-index here */}
             <div className="max-w-7xl mx-auto flex justify-between items-center relative"> {/* Set relative positioning */}
                 {/* Brand name */}
                 <Link to="/" className="text-white text-2xl font-semibold">Component Forge</Link>

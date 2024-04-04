@@ -6,15 +6,15 @@ const Documentation = () => {
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content ">
+            <div className="drawer-content mt-12 ">
                 {/* Page content here */}
                 <Outlet />
-                <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button absolute top-5 right-4 lg:hidden">Open drawer</label>
+                <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button absolute top-20 right-4 lg:hidden">Open drawer</label>
 
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className=" p-4 w-80 min-h-full bg-base-200 text-base-content">
+                <ul className=" p-4 w-80 min-h-full bg-base-200 text-base-content mt-12">
                     {/* Sidebar content here */}
                     {/* Dashboard links */}
                     <li className="px-4 py-3 border-b border-gray-300">
@@ -28,10 +28,16 @@ const Documentation = () => {
                         </div>
                         <div className="collapse-content ml-6">
                             <ul className="space-y-3 ullist">
-                                <li className="mb-2"><Link to="/documentation/forms">Input</Link></li>
+                                <li className="mb-2"><Link to="/documentation/forms">Form Collection</Link></li>
                             </ul>
                         </div>
                     </div>
+                    <li className="px-4 py-3 border-b border-gray-300">
+                        <Link to="/documentation/table" className="block font-semibold hover:text-blue-600">Table</Link>
+                    </li>
+                    <li className="px-4 py-3 border-b border-gray-300">
+                        <Link to="/documentation/navbar" className="block font-semibold hover:text-blue-600">Navbar</Link>
+                    </li>
                 </ul>
 
             </div>
